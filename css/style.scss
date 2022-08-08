@@ -217,7 +217,7 @@ footer{
     width: 300px;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -300px;
     height: 100vh;
     background: white;
     z-index: 10;
@@ -258,6 +258,38 @@ footer{
         }
     }
 
+}
+
+.gallery{
+    width: 70%;
+    margin: 50px 15%;
+    position: relative;
+    left: 100px;
+
+    div{
+        margin-top: 10px;
+        margin-right: 50px;
+    }
+
+    .arrow-prev,
+    .arrow-next{
+        position: absolute;
+        font-size: 30px;
+        transition: all 600ms ease;
+        top: 50%;
+        cursor: pointer;
+    }
+
+ 
+    .arrow-prev{
+        left: -50px;
+        
+    }
+    .arrow-next{
+        right: -30px;
+    }
+
+   
 }
  
   

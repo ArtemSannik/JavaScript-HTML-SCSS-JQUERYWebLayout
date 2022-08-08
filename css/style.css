@@ -201,7 +201,7 @@ footer .social div:hover {
   width: 300px;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -300px;
   height: 100vh;
   background: white;
   z-index: 10;
@@ -234,4 +234,29 @@ footer .social div:hover {
 }
 #hidden-menu a:hover {
   color: coral;
+}
+
+.gallery {
+  width: 70%;
+  margin: 50px 15%;
+  position: relative;
+  left: 100px;
+}
+.gallery div {
+  margin-top: 10px;
+  margin-right: 50px;
+}
+.gallery .arrow-prev,
+.gallery .arrow-next {
+  position: absolute;
+  font-size: 30px;
+  transition: all 600ms ease;
+  top: 50%;
+  cursor: pointer;
+}
+.gallery .arrow-prev {
+  left: -50px;
+}
+.gallery .arrow-next {
+  right: -30px;
 }/*# sourceMappingURL=style.css.map */
