@@ -54,7 +54,7 @@ header .menu:hover {
 
 .full-page {
   height: 95vh;
-  background: url(/img/car2.jpg) no-repeat center center;
+  background: url(../img/car2.jpg) no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
   background-blend-mode: multiply;
@@ -95,4 +95,29 @@ header .menu:hover {
 .full-page button i:hover {
   margin-left: 15px;
   color: red;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.features div {
+  width: 100%;
+  text-align: center;
+  margin: 50px 10px;
+}
+.features div img {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 2px solid silver;
+}
+.features div h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: coral;
+}
+.features div p {
+  font-weight: 200;
 }/*# sourceMappingURL=style.css.map */
