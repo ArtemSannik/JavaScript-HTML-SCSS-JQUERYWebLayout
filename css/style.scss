@@ -57,6 +57,13 @@ header{
     }
 }
 
+.fixed{
+    position: sticky;
+    top:0;
+    left:0;
+    border-bottom: 2px solid silver;
+}
+
 .full-page, 
 .bg-fixed{
     height: 95vh;
@@ -146,6 +153,8 @@ header{
     font-size: 25px;
     padding-top: 130px;
     margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    width: 300;
  }
 
  input{
@@ -158,5 +167,97 @@ header{
  }
 }
 
+footer{
+    width: 90%;
+    padding: 50px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .up-button{
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        background: #eee;
+        border: 1px solid silver;
+        cursor:pointer;
+        color: coral;
+        transition: transform 600ms ease;
+
+        &:hover{
+            transform:  translateY(-10px);
+        }
+
+        
+    }
+
+    .social div{
+        display:inline-block;
+        margin-left: 15px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        background: #eee;
+        border: 1px solid silver;
+        cursor:pointer;
+        color: coral;
+        transition: transform 600ms ease;
+
+        &:hover{
+            transform:  translateY(-10px);
+        }
+    }
+}
+
+#hidden-menu{
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background: white;
+    z-index: 10;
+    text-align: center;
+
+    .close{
+        font-size: 40px;
+        float: right;
+        margin-right: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 600ms ease;
+
+        &:hover{
+            color:coral;
+        }
+    }
+
+    h2{
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+
+    ul{
+        list-style: none;
+        
+    }
+    li{
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    a{
+        color: black;
+
+        &:hover{
+            color: coral;
+        }
+    }
+
+}
  
   

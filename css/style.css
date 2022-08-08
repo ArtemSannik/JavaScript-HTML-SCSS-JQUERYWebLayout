@@ -52,6 +52,14 @@ header .menu:hover {
   color: coral;
 }
 
+.fixed {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  border-bottom: 2px solid silver;
+}
+
 .full-page,
 .bg-fixed {
   height: 95vh;
@@ -137,6 +145,8 @@ header .menu:hover {
   font-size: 25px;
   padding-top: 130px;
   margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  width: 300;
 }
 .bg-fixed input {
   padding: 14px 20px;
@@ -145,4 +155,83 @@ header .menu:hover {
   border: 0;
   border-radius: 5px;
   background: coral;
+}
+
+footer {
+  width: 90%;
+  padding: 50px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .up-button {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  background: #eee;
+  border: 1px solid silver;
+  cursor: pointer;
+  color: coral;
+  transition: transform 600ms ease;
+}
+footer .up-button:hover {
+  transform: translateY(-10px);
+}
+footer .social div {
+  display: inline-block;
+  margin-left: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  background: #eee;
+  border: 1px solid silver;
+  cursor: pointer;
+  color: coral;
+  transition: transform 600ms ease;
+}
+footer .social div:hover {
+  transform: translateY(-10px);
+}
+
+#hidden-menu {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background: white;
+  z-index: 10;
+  text-align: center;
+}
+#hidden-menu .close {
+  font-size: 40px;
+  float: right;
+  margin-right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 600ms ease;
+}
+#hidden-menu .close:hover {
+  color: coral;
+}
+#hidden-menu h2 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+#hidden-menu ul {
+  list-style: none;
+}
+#hidden-menu li {
+  display: block;
+  margin-bottom: 10px;
+}
+#hidden-menu a {
+  color: black;
+}
+#hidden-menu a:hover {
+  color: coral;
 }/*# sourceMappingURL=style.css.map */
